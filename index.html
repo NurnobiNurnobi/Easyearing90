@@ -431,7 +431,7 @@
     function openWithdrawModal() {
         if (balance < 500) {
             Telegram.WebApp.HapticFeedback.notificationOccurred('error');
-            return alert("Minimum withdrawal amount is 🪙500.00 Keep earning!");
+            return alert("Minimum withdrawal amount is 🪙500:00 Keep earning!");
         }
         document.getElementById('withdraw-modal').classList.add('active');
         document.getElementById('withdraw-amount').textContent = balance.toFixed(2);
